@@ -5,12 +5,13 @@
     <head>
         <title>Portfolio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="CssPortfolio.css">
     </head>
 
     <body class="bg-dark">
 
         <!-- Header and Navigation Page -->
-        <nav class="navbar navbar-expand-md bg-black navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-fluid">
                 <a href="#home" class="navbar">
                     <img src="logo.png" width="25px">
@@ -22,7 +23,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">HOME</a>
+                            <a href="#home" class="nav-link">MAIN PAGE</a>
                         </li>
                         <li class="nav-item">
                             <a href="#about" class="nav-link">ABOUT</a>
@@ -36,22 +37,22 @@
         </nav>
 
         <!-- Content Section - Home Page -->
-        <section id="home">
-            <div class="container" style="padding-top: 50px">
+        <section id="home"></section>
+        <h1 class="mt-4 text-white" style="text-align: center;">Hi There!</h1>        
+            <div class="container-fluid" style="padding-top: 50px">
                 <div class="row ">
                     <div class="col-md-5">
-                        <img class="img-fluid mx-auto d-block" src="pic2.png" width="330px">
+                        <img class="img-fluid mx-auto d-block rounded" src="pic2.png" width="350px">
                     </div>
-                    <div class="col-md-7 text-white" style="padding-left: 0px;">
+                    <div class="col-md-7 text-white" style="padding-top: 50px;">
                         <br/>
-                        <h1 class="mt-4">Hi There!</h1>
                         <p class="mb-1">Thank you for you interest, here is a quick introduction to me and this website.</p>
                         <p class="mb-1">I am currently enrolled in a Web Development Bootcamp at Kodego and aspires</p>
                         <p class="mb-1">to be a future Full-Stack Developer.</p><br/>
                         <p class="mb-1">I enjoy learning new things that would develop me as a person and as a professional.</p>
                         <p class="mb-1">I enjoy more when I spend time with my family and loved ones.</p>
                         <p class="mb-1">My Favorite place to go to when i want to unwind is at the beach or somewhere far from the city.</p><br/>
-                        <p class="mb-1">This website serves as a First Portfolio project using HTML.</p>
+                        <p class="mb-1">This website serves as a First Portfolio project using HTML, CSS and Boostrap.</p>
                     </div>
                 </div>
             </div>
@@ -59,36 +60,89 @@
 
         <!-- Content Section - About Page -->
         <section id="about">
-            <div class="container-fluid" style="padding-top: 100px">
+            <div class="container-fluid" style="padding-top: 30px; padding-bottom: 20px;">
                 <div class="row">
-                    <div class="col-md-4 text-white">
-                        <h5 class="mb-4">Educational and Training Background</h5>
-                        <p>I took Bachelor of Science in Electronics and Communications Engineering</p>
-                        <p>Aside from being an ECE, I enrolled for the following trainings:</p>
-                        <p>Real Estate, Cisco and Instrumentation and Controls.</p>
+                    <div class="col-md-4 text-black my-2">
+                        <div class="card">
+                            <img class="card-img-top mx-auto d-block rounded-circle" src="gradcap.png" style="width:70px !important;">
+                            <div class="card-body">
+                                <h2 class="card-title">Education and Trainings</h2><br/>
+                                <p class="card-text">BS Electronics and Communications Engineering</p>
+                                <p class="card-text">CISCO Routing and Switching</p>
+                                <p class="card-text">Instrumentation Controls and Servicing</p>
+                                <p class="card-text">Real Estate</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 text-white">
-                        <h5 class="mb-4">Work Experience</h5>
-                        <p>Big chunk of my work experience came from Electronics manufacturing</p>
-                        <p>The role is to make sure the product conforms to the Company and Customer's Standard</p>
-                        <p>The role also have to maintain the Equipments being use during the production</p>
+                    <div class="col-md-4 text-black my-2">
+                        <div class="card">
+                            <img class="card-img-top mx-auto d-block rounded-circle" src="briefcase.jpg" style="width:70px !important;">
+                            <div class="card-body">
+                                <h2 class="card-title">Work Experience</h2><br/>                                
+                                <p class="card-text mb-0">System Support Engineer</p>
+                                <p class="card-text">Microdata Systems and Management</p>
+                                <p class="card-text mb-0">Test Engineer</p>
+                                <p class="card-text">Surface Technology International</p>
+                                <p class="card-text mb-0">Process Engineer</p>
+                                <p class="card-text">Cebu Mitsumi Incorporated</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 text-white">
-                        <h5 class="mb-4">What other things I do</h5>
-                        <p>Watch Sports Replays that includes Basketball and Boxing</p>
-                        <p>Play Mobile Games</p>
-                    </div>
+                    <div class="col-md-4 text-black my-2">
+                        <div class="card">
+                          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item card-image-top">
+                                <img src="1.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="4.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="5.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top active">
+                                <img src="2.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="7.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="8.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="10.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                              <div class="carousel-item card-image-top">
+                                <img src="9.png" class="d-block w-100" style="max-height: 300px;">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="card-body">
+                              <br/>  
+                              <h4 class="card-title">"The only impossible journey is the one you never begin."</h2>
+                              <p class="card-text">-Tony Robbins</p>
+                            </div>
+                          </div>    
+                        </div>
+                      </div>
+                      
                 </div>
             </div>
         </section>
 
         <!-- Content Section - Contact Page -->
         <section id="contact">
-            <div class="container-fluid" style="padding-top: 50px">
+            <div class="container" style="padding-top: 50px">
                 <div class="row">
-                    <div class="col-6">
-                        <h4 class="text-white">Let's Talk</h4>
-                        <form action="">
+                    <div class="col-6 mx-auto">
+                        <h4 class="text-white text-center">Let's Talk</h4>
+                        <form action="" class="form">
                             <div class="mb-2 text-white">
                                 <label for="" class="form-label">Name</label>
                                 <input type="text" name="" id="" class="form-control" placeholder="Name">
@@ -101,28 +155,31 @@
                                 <label for="" class="form-label">Your Message</label>
                                 <textarea name="" id="" rows="7" class="form-control" placeholder="Let's Talk"></textarea>
                             </div>
-                            <button class=" btn btn-primary">Send Message</button>
+                            <div class="text-center mb-4">
+                                <button class="btn btn-primary">Send Message</button>
+                            </div>                            
                         </form>
                     </div>
-                    <div class="col-6 text-white">
-                        <h4 class="mb-4">Let's Connect</h4>
-                        <a href="https://web.facebook.com/investinrealestatevismin/"><img src="https://i.pinimg.com/originals/73/ff/08/73ff08e18d252fec55d791fa97ab9e50.jpg" width="50px"></a>
-                        <a href="https://www.linkedin.com/in/jeffrey-rivera-95523b34/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhEgZ2VlWmf3v-KhSF8QBgCfRxKXtsULeviQ&usqp=CAU" width="50px"></a>
                     </div>
-                </div>
             </div>
         </section>
-
-        <!-- Main Page - Footer Secion -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col mt-md-4">
-                    <p class="text-white text-center fs-8">All rights reserved 2025</p>
-                </div>
-            </div>                    
+        <div class="link mb-0">
+            <a href="https://web.facebook.com/investinrealestatevismin/"><img src="https://i.pinimg.com/originals/73/ff/08/73ff08e18d252fec55d791fa97ab9e50.jpg" width="30px" class="rounded-circle"></a>
+            <a href="https://www.linkedin.com/in/jeffrey-rivera-95523b34/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAX04akoQ_RRg9_vLRyq4DtnhM9wjT91aKQ&usqp=CAU" width="30px" class="rounded-circle"></a>
+            <a href="https://github.com/jeffreybrivera"><img src="github.png" width="30px" class="rounded-circle"></a>
         </div>
-
+        <!-- Main Page - Footer Section -->
+        <section id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col mt-md-0">
+                        <p class="text-white text-center fs-8 mb-0">All rights reserved 2025</p>
+                    </div>
+                </div>                    
+            </div>
+        </section>
+            
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 
-</html
+</html>
