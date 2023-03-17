@@ -12,12 +12,11 @@
     <body class="bg-dark">
 
         <!-- Header and Navigation Page -->
-        <nav class="navbar navbar-expand-sm sticky-top">
+        <nav class="navbar navbar-expand-sm sticky-top p-0">
             <div class="container-fluid">
-                <a href="#home" class="navbar">
-                    <img src="logo.png" width="25px">
+                <a href="#home" class="navbar p-1" style="background-color: rgb(29, 27, 27);">
+                    <img src="namelogo2.png" class="rounded-circle" width="50px" style="background-color: rgb(15, 15, 14);">
                 </a>
-
                 <button class="navbar-toggler">
                     <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#myNavbar"></span>
                 </button>
@@ -41,16 +40,15 @@
         </nav>
 
         <!-- Content Section - Home Page -->
-        <section id="home">
-        <h1 class="mt-4 text-white" style="text-align: center;">Hi There!</h1>        
-            <div class="container-fluid" style="padding-top: 50px">
+        <section id="home">              
+            <div class="container-fluid" style="padding-top: 100px; padding-bottom: 20px;">
                 <div class="row ">
                     <div class="col-sm-5">
                         <img class="img-fluid mx-auto d-block rounded" src="pic2.png" width="300px">
                     </div>
-                    <div class="col-sm-7 text-white" style="padding-top: 50px;">
-                        <br/>
-                        <p class="mb-1">Thank you for your interest, here is a quick introduction to me and this website.</p>
+                    <div class="col-sm-7 text-white" style="padding-top: 10px;">
+                        <h1 class="mt-0 text-white">Hi There!</h1> 
+                        <p class="mb-1 mt-5">Thank you for your interest, here is a quick introduction to me and this website.</p>
                         <p class="mb-1">I am currently enrolled in a Web Development Bootcamp at Kodego and aspires</p>
                         <p class="mb-1">to be a future Full-Stack Developer.</p><br/>
                         <p class="mb-1">I enjoy learning new things that would develop me as a person and as a professional.</p>
@@ -69,32 +67,32 @@
                 <div class="row gx-3">
                     <div class="col-sm text-black my-2">
                         <div class="card card1 text-center">
-                            <img class="card-img-top mx-auto d-block rounded-circle" src="gradcap.png" style="width:70px !important;">
+                            <img class="card-img-top mx-auto d-block rounded-circle mt-4" src="gradcap.png" style="width:70px !important;">
                             <div class="card-body overflow-auto">
                                 <h2 class="card-title">Education and Trainings</h2><br/>
-                                <p class="card-text mb-0">BS Electronics and Communications Engineering</p>
+                                <p class="card-text mb-0 fw-bold">BS Electronics and Communications Engineering</p>
                                 <p class="card-text">School: University Of San Carlos</p>
-                                <p class="card-text mb-0">CISCO Routing and Switching</p>
+                                <p class="card-text mb-0 fw-bold">CISCO Routing and Switching</p>
                                 <p class="card-text">Training Center: CIE School - Cebu</p>
-                                <p class="card-text mb-0">Instrumentation Controls and Servicing</p>
+                                <p class="card-text mb-0 fw-bold">Instrumentation Controls and Servicing</p>
                                 <p class="card-text">Training Center: Metrologyx Services and Training</p>
-                                <p class="card-text mb-0">Real Estate</p>
+                                <p class="card-text mb-0 fw-bold">Real Estate</p>
                                 <p class="card-text">Training Center: NREA-Cebu</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm text-black my-2">
                         <div class="card card1 text-center">
-                            <img class="card-img-top mx-auto d-block rounded-circle" src="briefcase.jpg" style="width:70px !important;">
+                            <img class="card-img-top mx-auto d-block rounded-circle mt-4" src="briefcase.jpg" style="width:70px !important;">
                             <div class="card-body overflow-auto">
                                 <h2 class="card-title">Work Experience</h2><br/>                                
-                                <p class="card-text mb-0">System Support Engineer</p>
+                                <p class="card-text mb-0 fw-bold">System Support Engineer</p>
                                 <p class="card-text mb-0">Microdata Systems and Management</p>
                                 <p class="card-text">2019-2021</p>
-                                <p class="card-text mb-0">Test Engineer</p>
+                                <p class="card-text mb-0 fw-bold">Test Engineer</p>
                                 <p class="card-text mb-0">Surface Technology International</p>
                                 <p class="card-text">2014-2019</p>
-                                <p class="card-text mb-0">Process Engineer</p>
+                                <p class="card-text mb-0 fw-bold">Process Engineer</p>
                                 <p class="card-text mb-0">Cebu Mitsumi Incorporated</p>
                                 <p class="card-text">2012-2014</p>
                             </div>
@@ -102,12 +100,12 @@
                     </div>    
                 </div>
                 <div class="text-center mt-4">
-                    <button class="btn btn-danger">Download Resume</button>
+                    <button class="btn btn-primary">Download Resume</button>
                 </div>
             </div>
         </section>
         <section id="projects">
-            <h2 class="mt-4 text-white" style="text-align: center;"><u>Projects</u></h2>
+            <h2 class="mt-1 text-white" style="text-align: center;"><u>Projects</u></h2>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4 mt-4">
@@ -129,8 +127,9 @@
                                     </button>
                                 <div class="card-body">
                                   <br/>  
-                                  <a href=""><h4 class="card-title">HTML using Javascript</h2></a>
-                                  <!-- <p class="card-text">-Tony Robbins</p> -->
+                                  <h4 class="card-title">HTML with Javascript</h4>
+                                  <p class="card-text">-Sample activity with javascript</p>
+                                  <a href="https://jeffreybrivera.github.io/RockPaperScissor/"><button class="btn btn-primary">Go to Page</button></a>
                                 </div>
                             </div>    
                         </div>
@@ -154,7 +153,9 @@
                                 </button>
                             <div class="card-body">
                               <br/>  
-                              <a href=""><h4 class="card-title">Online Library</h2></a>
+                              <h4 class="card-title">Online Library</h4>
+                              <p class="card-text">-Basic HTML with forms</p>
+                              <a href=""><button class="btn btn-primary">Go to Page</button></a>
                             </div>
                         </div>    
                       </div>
@@ -178,7 +179,9 @@
                                 </button>
                             <div class="card-body">
                               <br/>  
-                              <a href=""><h4 class="card-title">Bootstrap</h2></a>
+                              <h4 class="card-title">Bootstrap</h4>
+                              <p class="card-text">-Basic HTML with use of Bootstrap</p>
+                              <a href=""><button class="btn btn-primary">Go to Page</button></a>
                             </div>
                         </div>
                       </div>
@@ -214,8 +217,8 @@
             </div>
         </section>
         <div class="link mb-0">
-            <a href="https://web.facebook.com/investinrealestatevismin/"><img src="https://i.pinimg.com/originals/73/ff/08/73ff08e18d252fec55d791fa97ab9e50.jpg" width="30px" class="rounded-circle"></a>
-            <a href="https://www.linkedin.com/in/jeffrey-rivera-95523b34/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAX04akoQ_RRg9_vLRyq4DtnhM9wjT91aKQ&usqp=CAU" width="30px" class="rounded-circle"></a>
+            <a href="https://web.facebook.com/investinrealestatevismin/"><img src="fbicon.png" width="30px" class="rounded-circle"></a>
+            <a href="https://www.linkedin.com/in/jeffrey-rivera-95523b34/"><img src="linkedinicon.png" width="30px" class="rounded-circle"></a>
             <a href="https://github.com/jeffreybrivera"><img src="github.png" width="30px" class="rounded-circle"></a>
         </div>
         <!-- Main Page - Footer Section -->
